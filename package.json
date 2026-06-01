@@ -1,0 +1,7 @@
+{
+  "name": "hkmc-summary-report",
+  "private": true,
+  "scripts": {
+    "dev": "node server.mjs"
+  }
+}
