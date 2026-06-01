@@ -71,6 +71,7 @@
 <div class="nav-bar">
   <span class="nav-brand">MLB HKMC 5월</span>
   <a onclick="document.getElementById('sec1').scrollIntoView({behavior:'smooth'})">1.Executive Summary</a>
+  <a onclick="document.getElementById('sec-change').scrollIntoView({behavior:'smooth'})">1-1.월별변화</a>
   <a onclick="document.getElementById('sec2').scrollIntoView({behavior:'smooth'})">2.채널/매장</a>
   <a onclick="document.getElementById('sec3').scrollIntoView({behavior:'smooth'})">3.상품/재고</a>
   <a onclick="document.getElementById('sec4').scrollIntoView({behavior:'smooth'})">4.예상손익</a>
@@ -135,6 +136,55 @@
           <li><b>마카오 정상 YoY 115.1%:</b> SenadoSquare 155%, Londoner 109% 성장.</li>
           <li><b>26SS 의류 판매율 42.1%:</b> YoY +11.1%p로 상품 소진 속도 개선.</li>
           <li><b>과시즌S 재고 YoY -10%:</b> 재고 총량 감소와 주간 소진 개선 확인.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <div class="page-title" id="sec-change">1-1. 1~4월 흐름 대비 5월 마감 변화</div>
+  <div class="container">
+    <div class="left">
+      <div class="section">
+        <div class="section-title">채널별 YoY 변화</div>
+        <table>
+          <tr><th>채널</th><th class="num">1~3월 누적</th><th class="num">4월</th><th class="num">5월</th><th>변화 해석</th></tr>
+          <tr><td>HK 정상</td><td class="num">113%</td><td class="num">101%</td><td class="num"><span class="badge-down">98%</span></td><td>둔화 지속</td></tr>
+          <tr><td>HK 아울렛</td><td class="num">134%</td><td class="num">115%</td><td class="num"><span class="badge-up">143%</span></td><td>재가속</td></tr>
+          <tr><td>HK 온라인</td><td class="num">387%</td><td class="num">221%</td><td class="num"><span class="badge-warn">116%</span></td><td>성장률 정상화</td></tr>
+          <tr><td>마카오 정상</td><td class="num">119%</td><td class="num">115%</td><td class="num"><span class="badge-up">115%</span></td><td>견조 유지</td></tr>
+          <tr><td>마카오 아울렛</td><td class="num">76%</td><td class="num">91%</td><td class="num"><span class="badge-down">83%</span></td><td>재둔화</td></tr>
+        </table>
+      </div>
+      <div class="section">
+        <div class="section-title">핵심 KPI 변화</div>
+        <table>
+          <tr><th>지표</th><th class="num">4월</th><th class="num">5월</th><th>변화</th></tr>
+          <tr><td>실판매출</td><td class="num">18,882K</td><td class="num">19,334K</td><td><span class="badge-up">+452K</span></td></tr>
+          <tr><td>실판매출 YoY</td><td class="num">108%</td><td class="num">109%</td><td><span class="badge-up">+1%p</span></td></tr>
+          <tr><td>할인율</td><td class="num">18.1%</td><td class="num">19.3%</td><td><span class="badge-warn">+1.2%p</span></td></tr>
+          <tr><td>직접이익</td><td class="num">573K</td><td class="num">296K</td><td><span class="badge-down">-277K</span></td></tr>
+          <tr><td>과시즌S 재고</td><td class="num">71,284K</td><td class="num">60,874K</td><td><span class="badge-up">-10,410K</span></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="right">
+      <div class="box box-blue">
+        <div class="box-title blue">5월 변화 핵심 해석</div>
+        <ul>
+          <li><b>매출은 소폭 개선:</b> 실판매출이 4월 18,882K에서 5월 19,334K로 452K 증가. YoY도 108%에서 109%로 유지.</li>
+          <li><b>성장축은 아울렛:</b> HK 아울렛은 4월 YoY 115%에서 5월 143%로 재가속. 과시즌 처분과 매출 방어를 동시에 담당.</li>
+          <li><b>정상 채널은 관리 필요:</b> HK 정상은 1~3월 113% → 4월 101% → 5월 98%로 둔화. NTP1 공백과 기존점 회복을 분리 관리해야 함.</li>
+          <li><b>온라인 성장률 정상화:</b> HK 온라인은 387% → 221% → 116%로 낮아졌고 5월 목표비도 69.6%. 채널별 프로모션 재설계 필요.</li>
+          <li><b>재고 개선은 성과:</b> 과시즌S 재고가 71,284K에서 60,874K로 10,410K 감소. 다만 할인율은 18.1%에서 19.3%로 상승.</li>
+        </ul>
+      </div>
+      <div class="box box-yellow">
+        <div class="box-title yellow">수익성 관점</div>
+        <ul>
+          <li><b>직접이익 감소:</b> 4월 573K에서 5월 예상 296K로 감소. 매출 성장보다 할인율 상승과 비용 부담 영향이 큼.</li>
+          <li><b>영업이익 적자:</b> 5월 예상 -1,313K. 매출 회복과 별개로 영업비 1,609K 관리가 필요.</li>
+          <li><b>6월 우선순위:</b> NTP1 오픈 효과 확인, HK 정상 회복, 온라인 목표 미달 개선, 과시즌 소진과 이익률의 균형 관리.</li>
         </ul>
       </div>
     </div>
