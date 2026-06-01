@@ -1,657 +1,345 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MLB·DISCOVERY 브랜드 2026년 4월 경영 보고서 (홍콩/마카오)</title>
+  <title>MLB 브랜드 2026년 5월 경영 보고서 - 실판매출 마감 후 예상 손익</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; font-size: 9px; color: #333; background: #f7fafc; line-height: 1.3; }
-    .nav-bar { position: sticky; top: 0; z-index: 100; background: #1a365d; padding: 6px 12px; display: flex; align-items: center; gap: 6px; max-width: 210mm; margin: 0 auto; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
-    .nav-brand { color: white; font-weight: bold; font-size: 10px; margin-right: 8px; }
-    .nav-bar a { color:white;text-decoration:none;padding:3px 7px;border-radius:3px;font-size:7.5px;background:rgba(255,255,255,0.15);cursor:pointer; }
-    .nav-bar a:hover { background:rgba(255,255,255,0.3); }
-    .wrap { max-width: 210mm; margin: 0 auto; background: #fff; padding: 12mm 11mm 18mm 11mm; min-height: 100vh; box-shadow: 0 0 20px rgba(0,0,0,0.08); }
-    .header { border-bottom: 2.5px solid #1a365d; padding-bottom: 8px; margin-bottom: 12px; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 8px 18px; }
+    body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; font-size: 9px; color: #333; background: #f7fafc; line-height: 1.35; }
+    .nav-bar { position: sticky; top: 0; z-index: 100; max-width: 210mm; margin: 0 auto; padding: 6px 12px; display: flex; align-items: center; gap: 6px; background: #1a365d; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+    .nav-brand { margin-right: 8px; color: #fff; font-weight: bold; font-size: 10px; }
+    .nav-bar a { padding: 3px 7px; border-radius: 3px; color: #fff; background: rgba(255,255,255,.15); text-decoration: none; font-size: 7.5px; cursor: pointer; }
+    .nav-bar a:hover { background: rgba(255,255,255,.3); }
+    .wrap { max-width: 210mm; min-height: 100vh; margin: 0 auto; padding: 11mm 11mm 18mm; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,.08); }
+    .header { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: end; gap: 8px 18px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2.5px solid #1a365d; }
     .header-left { min-width: 0; }
-    .header-left h1 { font-size: 15px; color: #1a365d; letter-spacing: -0.3px; }
-    .header-left p { max-width: 430px; font-size: 7.5px; color: #666; margin-top: 4px; line-height: 1.45; }
+    .header-left h1 { color: #1a365d; font-size: 15px; letter-spacing: 0; }
+    .report-badge { display: inline-block; margin-top: 5px; padding: 4px 7px; border: 1px solid #f6ad55; border-radius: 3px; color: #9c4221; background: #fffaf0; font-size: 8.5px; font-weight: bold; }
+    .header-left p { max-width: 470px; margin-top: 5px; color: #666; font-size: 7.5px; line-height: 1.5; }
     .header-right { text-align: right; white-space: nowrap; }
-    .header-right .big-num { font-size: 20px; font-weight: bold; color: #1a365d; white-space: nowrap; }
+    .header-right .big-num { color: #1a365d; font-size: 21px; font-weight: bold; }
     .header-right .big-num span { font-size: 9px; font-weight: normal; }
-    .header-right .sub { font-size: 8px; color: #666; margin-top: 2px; }
+    .header-right .sub { margin-top: 2px; color: #666; font-size: 8px; }
     .header-summary { grid-column: 1 / -1; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 4px; align-items: center; }
-    .summary-chip { display: inline-flex; align-items: center; gap: 4px; min-height: 18px; padding: 2px 6px; border-radius: 3px; background: #f7fafc; border: 1px solid #e2e8f0; font-size: 7.5px; color: #4a5568; white-space: nowrap; }
+    .summary-chip { display: inline-flex; align-items: center; gap: 4px; min-height: 18px; padding: 2px 6px; border: 1px solid #e2e8f0; border-radius: 3px; color: #4a5568; background: #f7fafc; font-size: 7.5px; white-space: nowrap; }
     .summary-chip strong { color: #1a365d; font-size: 8px; }
-    .page-title { font-size: 11px; font-weight: bold; color: #1a365d; border-left: 3.5px solid #1a365d; padding-left: 8px; margin: 16px 0 8px 0; }
-    .divider { border: none; border-top: 1px dashed #cbd5e0; margin: 14px 0; }
+    .page-title { margin: 16px 0 8px; padding-left: 8px; border-left: 3.5px solid #1a365d; color: #1a365d; font-size: 11px; font-weight: bold; }
+    .divider { margin: 14px 0; border: none; border-top: 1px dashed #cbd5e0; }
     .container { display: flex; gap: 10px; }
     .left, .right { width: 50%; }
     .section { margin-bottom: 7px; }
-    .section-title { font-size: 8.5px; font-weight: bold; color: #1a365d; border-bottom: 1.5px solid #1a365d; padding-bottom: 2px; margin-bottom: 4px; }
+    .section-title { margin-bottom: 4px; padding-bottom: 2px; border-bottom: 1.5px solid #1a365d; color: #1a365d; font-size: 8.5px; font-weight: bold; }
     table { width: 100%; border-collapse: collapse; font-size: 7.5px; }
-    th { background: #f0f4f8; padding: 2.5px 3px; text-align: left; font-weight: bold; border-bottom: 1px solid #cbd5e0; color: #2d3748; }
+    th { padding: 2.5px 3px; border-bottom: 1px solid #cbd5e0; color: #2d3748; background: #f0f4f8; text-align: left; font-weight: bold; }
     td { padding: 2.5px 3px; border-bottom: 1px solid #edf2f7; }
     .num { text-align: right; }
-    .badge-up { background: #c6f6d5; color: #276749; padding: 1px 4px; border-radius: 2px; font-size: 7px; font-weight: bold; }
-    .badge-down { background: #fed7d7; color: #c53030; padding: 1px 4px; border-radius: 2px; font-size: 7px; font-weight: bold; }
-    .badge-warn { background: #fefcbf; color: #975a16; padding: 1px 4px; border-radius: 2px; font-size: 7px; font-weight: bold; }
-    .kpi-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-bottom: 8px; }
-    .kpi-box { background: #f7fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 4px; text-align: center; }
-    .kpi-label { font-size: 6.5px; color: #718096; margin-bottom: 1px; }
-    .kpi-value { font-size: 12px; font-weight: bold; color: #1a365d; }
-    .kpi-change { font-size: 6.5px; margin-top: 1px; }
-    .up { color: #276749; } .down { color: #c53030; }
-    .box { border-radius: 4px; padding: 6px 7px; margin-bottom: 6px; }
-    .box-red { background: #fff5f5; border-left: 3px solid #c53030; }
-    .box-yellow { background: #fffff0; border-left: 3px solid #d69e2e; }
-    .box-green { background: #f0fff4; border-left: 3px solid #38a169; }
-    .box-blue { background: #ebf8ff; border-left: 3px solid #3182ce; }
-    .box-dark { background: #1a365d; color: white; border-radius: 4px; padding: 7px; }
-    .box-orange { background: #fffaf0; border-left: 3px solid #dd6b20; }
-    .box-title { font-weight: bold; margin-bottom: 3px; font-size: 8.5px; }
-    .box-title.red { color: #c53030; } .box-title.yellow { color: #975a16; }
-    .box-title.green { color: #276749; } .box-title.blue { color: #2b6cb0; }
-    .box-title.orange { color: #c05621; }
-    ul { padding-left: 11px; margin: 0; }
-    li { margin-bottom: 2px; line-height: 1.4; }
-    .footer { text-align: center; font-size: 7px; color: #a0aec0; margin-top: 18px; padding-top: 6px; border-top: 1px solid #e2e8f0; }
-    .store-tag-hk { background:#ebf8ff;color:#2b6cb0;padding:1px 4px;border-radius:2px;font-size:6.5px;font-weight:bold; }
-    .store-tag-mo { background:#faf5ff;color:#6b46c1;padding:1px 4px;border-radius:2px;font-size:6.5px;font-weight:bold; }
-    .store-tag-out { background:#fffaf0;color:#c05621;padding:1px 4px;border-radius:2px;font-size:6.5px;font-weight:bold; }
-    .trend-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 4px; margin-bottom: 6px; }
-    .trend-box { background: #f7fafc; border: 1px solid #e2e8f0; border-radius: 4px; padding: 5px 4px; text-align: center; }
-    .trend-label { font-size: 6px; color: #718096; margin-bottom: 1px; }
-    .trend-value { font-size: 13px; font-weight: bold; color: #1a365d; }
-    .trend-sub { font-size: 6.5px; margin-top: 1px; }
-    @media print { body { background: white; } .wrap { box-shadow: none; } .nav-bar { display: none; } }
+    .badge-up, .badge-down, .badge-warn { padding: 1px 4px; border-radius: 2px; font-size: 7px; font-weight: bold; }
+    .badge-up { color: #276749; background: #c6f6d5; }
+    .badge-down { color: #c53030; background: #fed7d7; }
+    .badge-warn { color: #975a16; background: #fefcbf; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 4px; margin-bottom: 8px; }
+    .kpi-box, .trend-box { padding: 5px 4px; border: 1px solid #e2e8f0; border-radius: 4px; background: #f7fafc; text-align: center; }
+    .kpi-label, .trend-label { margin-bottom: 1px; color: #718096; font-size: 6.5px; }
+    .kpi-value, .trend-value { color: #1a365d; font-size: 12px; font-weight: bold; }
+    .kpi-change, .trend-sub { margin-top: 1px; font-size: 6.5px; }
+    .trend-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 4px; margin-bottom: 6px; }
+    .up { color: #276749; }
+    .down { color: #c53030; }
+    .box { margin-bottom: 6px; padding: 6px 7px; border-radius: 4px; }
+    .box-red { border-left: 3px solid #c53030; background: #fff5f5; }
+    .box-yellow { border-left: 3px solid #d69e2e; background: #fffff0; }
+    .box-green { border-left: 3px solid #38a169; background: #f0fff4; }
+    .box-blue { border-left: 3px solid #3182ce; background: #ebf8ff; }
+    .box-orange { border-left: 3px solid #dd6b20; background: #fffaf0; }
+    .box-dark { padding: 7px; border-radius: 4px; color: #fff; background: #1a365d; }
+    .box-title { margin-bottom: 3px; font-size: 8.5px; font-weight: bold; }
+    .red { color: #c53030; }
+    .yellow { color: #975a16; }
+    .green { color: #276749; }
+    .blue { color: #2b6cb0; }
+    .orange { color: #c05621; }
+    ul { margin: 0; padding-left: 11px; }
+    li { margin-bottom: 2px; line-height: 1.45; }
+    .sub-list { margin-top: 2px; padding-left: 14px; font-size: 7px; }
+    .note { margin-top: 3px; color: #718096; font-size: 6.5px; }
+    .footer { margin-top: 18px; padding-top: 6px; border-top: 1px solid #e2e8f0; color: #a0aec0; text-align: center; font-size: 7px; }
+    @media print { body { background: #fff; } .wrap { box-shadow: none; } .nav-bar { display: none; } }
   </style>
 </head>
 <body>
-
 <div class="nav-bar">
-  <span class="nav-brand">⚾🔭 MLB·DX HKMC 4월</span>
+  <span class="nav-brand">MLB HKMC 5월</span>
   <a onclick="document.getElementById('sec1').scrollIntoView({behavior:'smooth'})">1.Executive Summary</a>
-  <a onclick="document.getElementById('sec2').scrollIntoView({behavior:'smooth'})">2.채널/아이템</a>
-  <a onclick="document.getElementById('sec3').scrollIntoView({behavior:'smooth'})">3.5월MTD</a>
-  <a onclick="document.getElementById('sec4').scrollIntoView({behavior:'smooth'})">4.할인율/재고</a>
-  <a onclick="document.getElementById('sec5').scrollIntoView({behavior:'smooth'})">5.매장효율성</a>
-  <a onclick="document.getElementById('sec6').scrollIntoView({behavior:'smooth'})">6.영업비</a>
-  <a onclick="document.getElementById('sec7').scrollIntoView({behavior:'smooth'})">7.DISCOVERY</a>
-  <a onclick="document.getElementById('sec8').scrollIntoView({behavior:'smooth'})">8.전략</a>
+  <a onclick="document.getElementById('sec2').scrollIntoView({behavior:'smooth'})">2.채널/매장</a>
+  <a onclick="document.getElementById('sec3').scrollIntoView({behavior:'smooth'})">3.상품/재고</a>
+  <a onclick="document.getElementById('sec4').scrollIntoView({behavior:'smooth'})">4.예상손익</a>
+  <a onclick="document.getElementById('sec5').scrollIntoView({behavior:'smooth'})">5.포트폴리오</a>
+  <a onclick="document.getElementById('sec6').scrollIntoView({behavior:'smooth'})">6.DISCOVERY</a>
+  <a onclick="document.getElementById('sec7').scrollIntoView({behavior:'smooth'})">7.Action Plan</a>
 </div>
 
 <div class="wrap">
-
-  <!-- HEADER -->
   <div class="header">
     <div class="header-left">
-      <h1>MLB 브랜드 2026년 4월 경영 보고서 (홍콩/마카오)</h1>
-      <p>F&F HKMC · 보고기간: 2026.04 당월 / 1~4월 누적 · 단위: K HKD · 분석기준: 2026년 4월 vs 2025년 4월 &nbsp;|&nbsp; DISCOVERY 브랜드 현황 포함 (Section 7) &nbsp;|&nbsp; 5월 MTD 추세 포함 (Section 3)</p>
+      <h1>MLB 브랜드 2026년 5월 경영 보고서 (홍콩/마카오)</h1>
+      <div class="report-badge">실판매출 마감 후 예상 손익 보고서 · 예상 변동비 및 고정비 적용</div>
+      <p>F&amp;F HKMC · 보고기간: 2026.05.01~05.31 · 단위: K HKD · 실판매출은 마감 실적 기준 · 손익은 예상 변동비 및 고정비 적용 기준 · 영업비 상세 및 일회성 경비는 확정 자료 수령 후 별도 반영</p>
     </div>
     <div class="header-right">
-      <div class="big-num">18,882K <span>HKD (MLB 4월 당월 실판매출)</span></div>
-      <div class="sub">4월 당월 실판매출 · 단위 K HKD</div>
+      <div class="big-num">19,334K <span>HKD</span></div>
+      <div class="sub">MLB 5월 실판매출 마감 · YoY 109%</div>
     </div>
     <div class="header-summary">
-      <div class="summary-chip"><strong>YoY</strong> 108%</div>
-      <div class="summary-chip"><strong>영업이익</strong> -2,086K <span class="badge-warn">적자확대</span></div>
-      <div class="summary-chip"><strong>누적 영업이익</strong> +6.6M 증가</div>
-      <div class="summary-chip"><strong>할인율</strong> 18.1% <span class="badge-warn">전년과 유사</span></div>
-      <div class="summary-chip"><strong>매출총이익</strong> +1M 증가 <span class="badge-up">양호</span></div>
+      <div class="summary-chip"><strong>목표비</strong> 97.0% <span class="badge-warn">근접 미달</span></div>
+      <div class="summary-chip"><strong>할인율</strong> 19.3% <span class="badge-warn">YoY +1.3%p</span></div>
+      <div class="summary-chip"><strong>예상 직접이익</strong> 296K <span class="badge-warn">계획비 38%</span></div>
+      <div class="summary-chip"><strong>예상 직접이익률</strong> 1.5%</div>
     </div>
   </div>
 
-  <!-- ===== SECTION 1 ===== -->
-  <div class="page-title" id="sec1">1. Executive Summary — 4월 당월 & 1~4월 누적 핵심 KPI (MLB 브랜드)</div>
-
+  <div class="page-title" id="sec1">1. Executive Summary — 5월 실판매출 마감 및 예상 손익</div>
   <div class="kpi-grid">
-    <div class="kpi-box">
-      <div class="kpi-label">실판매출 (당월)</div>
-      <div class="kpi-value" style="font-size:11px;">18,882K</div>
-      <div class="kpi-change up">YoY 108% (홍콩 115% 성장)</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">영업이익 (당월)</div>
-      <div class="kpi-value" style="font-size:11px; color:#c53030;">-2,086K</div>
-      <div class="kpi-change down">적자 확대 (누적 +6.6M)</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">매출총이익 (당월)</div>
-      <div class="kpi-value" style="font-size:11px;">+1,007K</div>
-      <div class="kpi-change up">YoY +1M 증가 (양호)</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">할인율 (당월)</div>
-      <div class="kpi-value" style="font-size:11px;">18.1%</div>
-      <div class="kpi-change">전년과 유사 (+0.2%p)</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">평당매출 (당월)</div>
-      <div class="kpi-value" style="font-size:11px;">835</div>
-      <div class="kpi-change up">HKD/평/일 YoY 115%</div>
-    </div>
+    <div class="kpi-box"><div class="kpi-label">실판매출 마감</div><div class="kpi-value">19,334K</div><div class="kpi-change up">YoY 109%</div></div>
+    <div class="kpi-box"><div class="kpi-label">5월 목표</div><div class="kpi-value">19,940K</div><div class="kpi-change down">목표비 97.0%</div></div>
+    <div class="kpi-box"><div class="kpi-label">할인율</div><div class="kpi-value">19.3%</div><div class="kpi-change down">YoY +1.3%p</div></div>
+    <div class="kpi-box"><div class="kpi-label">예상 직접이익</div><div class="kpi-value">296K</div><div class="kpi-change down">계획 784K 대비 38%</div></div>
+    <div class="kpi-box"><div class="kpi-label">예상 직접이익률</div><div class="kpi-value">1.5%</div><div class="kpi-change down">계획 3.9% 대비 -2.4%p</div></div>
   </div>
-
-  <div class="kpi-grid" style="margin-top:0;">
-    <div class="kpi-box" style="border-color:#c6f6d5;">
-      <div class="kpi-label">실판매출 (누적)</div>
-      <div class="kpi-value" style="font-size:11px;">103,946K</div>
-      <div class="kpi-change up">YoY 118% (연간 목표 114% 초과)</div>
-    </div>
-    <div class="kpi-box" style="border-color:#c6f6d5;">
-      <div class="kpi-label">영업이익 (누적)</div>
-      <div class="kpi-value" style="font-size:11px;">8,253K</div>
-      <div class="kpi-change up">YoY +6.6M 증가 (이익률 7.9%)</div>
-    </div>
-    <div class="kpi-box" style="border-color:#c6f6d5;">
-      <div class="kpi-label">직접이익 (누적)</div>
-      <div class="kpi-value" style="font-size:11px;">15,320K</div>
-      <div class="kpi-change up">이익률 14.7% (YoY 240%)</div>
-    </div>
-    <div class="kpi-box" style="border-color:#fefcbf;">
-      <div class="kpi-label">할인율 (누적)</div>
-      <div class="kpi-value" style="font-size:11px;">18.4%</div>
-      <div class="kpi-change down">YoY +0.2%p</div>
-    </div>
-    <div class="kpi-box" style="border-color:#fed7d7;">
-      <div class="kpi-label">영업비 (당월)</div>
-      <div class="kpi-value" style="font-size:11px;">2,659K</div>
-      <div class="kpi-change down">YoY 237% 급증</div>
-    </div>
+  <div class="kpi-grid">
+    <div class="kpi-box"><div class="kpi-label">1~5월 누적 실판매출</div><div class="kpi-value">123,280K</div><div class="kpi-change up">YoY 115%</div></div>
+    <div class="kpi-box"><div class="kpi-label">26SS 의류 판매율</div><div class="kpi-value">42.1%</div><div class="kpi-change up">YoY +11.1%p</div></div>
+    <div class="kpi-box"><div class="kpi-label">과시즌S 재고</div><div class="kpi-value">60,874K</div><div class="kpi-change up">YoY -10%</div></div>
+    <div class="kpi-box"><div class="kpi-label">W22 주간 매출</div><div class="kpi-value">3,685K</div><div class="kpi-change">WoW -0.6%</div></div>
+    <div class="kpi-box"><div class="kpi-label">DX HKMC 실판매출</div><div class="kpi-value">347K</div><div class="kpi-change down">계획비 34.1%</div></div>
   </div>
-
   <div class="container">
     <div class="left">
-      <div class="box box-red">
-        <div class="box-title red">⚠️ 4월 당월 적자 확대 주요 원인 (단, 누적 영업이익은 +6.6M 증가)</div>
+      <div class="box box-yellow">
+        <div class="box-title yellow">주요 리스크</div>
         <ul>
-          <li><b>인센티브 비용 증가:</b> HKD 166K → 594K (+357%) — 영업이익 적자 확대의 핵심 원인</li>
-          <li><b>광고비 증가:</b> 마케팅비 692K (YoY 455%, +540K) — 광고선전비 등 마케팅 활동 강화</li>
-          <li><b>재고조정 비용 329K:</b> Damage of OSH & Y22-23 Write Off — 일회성 손실 인식</li>
-          <li><b>NTP1 매장 리뉴얼 휴점:</b> 공사(3/23~5/31)로 4월 매출 0K (전년 1,040K)</li>
-          <li><b>마카오 아울렛 역성장(91%):</b> 과시즌S 재고 수요 감소 — Senado Outlet 7월말 철수 예정</li>
-          <li><b>과시즌 재고 141,205K (YoY 119%):</b> 과시즌F 69,921K(146%) + 과시즌S 71,284K(101%) 부담 지속</li>
+          <li><b>매출 목표 근접 미달:</b> 19,334K로 목표 대비 97.0%. 6월 계획에 미달 원인 반영 필요.</li>
+          <li><b>예상 직접이익 부족:</b> 296K, 이익률 1.5%로 계획 784K / 3.9% 대비 하회.</li>
+          <li><b>HK 정상 채널 둔화:</b> YoY 98.0%, 목표비 97.2%로 전체 성장률을 낮춤.</li>
+          <li><b>ACC 재고 부담:</b> Shoes 64.4주, Bag 69.6주, 기타 ACC 115.0주.</li>
+          <li><b>DX HKMC 부진:</b> 실판매출 347K로 계획 1,020K 대비 34.1%, 예상 직접이익 -452K.</li>
         </ul>
       </div>
     </div>
     <div class="right">
       <div class="box box-green">
-        <div class="box-title green">✅ 주요 성과 (당월/누적)</div>
+        <div class="box-title green">주요 성과</div>
         <ul>
-          <li><b>홍콩 매출 115% 성장:</b> 핵심 시장 견조한 성장세 유지</li>
-          <li><b>매출총이익 +1M 증가:</b> 매출 성장과 직접비 효율화로 본업 수익성 양호</li>
-          <li><b>4월 직접이익 573K 흑자전환 (전년 -588K):</b> 매장 운영 효율화 효과 — 직접비율 64.4%→59.0%(-5.4%p) 개선</li>
-          <li><b>온라인 YoY 221%:</b> Official MLB(HE2) 314% 급성장, 직접이익률 37.2% — 채널 중 최고</li>
-          <li><b>마카오 정상 직접이익 588K (이익률 12.7%):</b> MC1 Venetian 507K + MC3 Senado Square 111K 견인</li>
-          <li><b>누적 영업이익 +6.6M 증가 (YoY 503%):</b> 누적 영업이익률 7.9%(전년 1.8%) 큰 폭 개선</li>
-          <li><b>연간 매출 목표(114%) 초과 달성 중:</b> 현재 118% — 목표 상회 페이스</li>
-          <li><b>26S 당시즌 판매율 36.0% (+13.4%p):</b> TS 86.7%, JP 83.4%, MT 70.9% 핵심 카테고리 양호</li>
+          <li><b>실판매출 YoY 109%:</b> 목표는 소폭 미달했으나 전년 대비 성장 유지.</li>
+          <li><b>HK 아울렛 YoY 143.5%:</b> CITYGATE(O), MOKO(O), YuenLong(O), MegaMall 성장.</li>
+          <li><b>마카오 정상 YoY 115.1%:</b> SenadoSquare 155%, Londoner 109% 성장.</li>
+          <li><b>26SS 의류 판매율 42.1%:</b> YoY +11.1%p로 상품 소진 속도 개선.</li>
+          <li><b>과시즌S 재고 YoY -10%:</b> 재고 총량 감소와 주간 소진 개선 확인.</li>
         </ul>
       </div>
     </div>
   </div>
 
   <hr class="divider">
-
-  <!-- ===== SECTION 2 ===== -->
-  <div class="page-title" id="sec2">2. 채널 · 아이템별 실판매출 분석 — 1~3월 대비 4월 변화</div>
-
+  <div class="page-title" id="sec2">2. 채널 · 매장별 5월 실판매출 마감 분석</div>
   <div class="container">
     <div class="left">
       <div class="section">
-        <div class="section-title">📊 채널별 실판매출 추이 비교 (K HKD)</div>
+        <div class="section-title">채널별 실판매출 (K HKD)</div>
         <table>
-          <tr><th>채널</th><th class="num">1~3월 누적YoY</th><th class="num">4월 YoY</th><th class="num">방향</th></tr>
-          <tr style="font-weight:bold;background:#f0f4f8;"><td>HKMC 전체</td><td class="num">119%</td><td class="num">108%</td><td class="num" style="color:#c53030;">↘ 둔화</td></tr>
-          <tr><td>홍콩 정상</td><td class="num">113%</td><td class="num">101%</td><td class="num" style="color:#c53030;">↘ 둔화 (NTP1휴점)</td></tr>
-          <tr><td>홍콩 아울렛</td><td class="num">134%</td><td class="num">115%</td><td class="num" style="color:#975a16;">↘ 둔화</td></tr>
-          <tr><td>홍콩 온라인</td><td class="num">387%</td><td class="num">221%</td><td class="num" style="color:#276749;">↑ 고성장 지속</td></tr>
-          <tr><td>마카오 정상</td><td class="num">119%</td><td class="num">115%</td><td class="num">→ 유지</td></tr>
-          <tr><td>마카오 아울렛</td><td class="num">76%</td><td class="num">91%</td><td class="num" style="color:#975a16;">↗ 소폭개선(여전히 역성장)</td></tr>
+          <tr><th>채널</th><th class="num">5월 실적</th><th class="num">목표비</th><th class="num">YoY</th><th class="num">할인율</th></tr>
+          <tr><td>HK 정상</td><td class="num">9,644K</td><td class="num"><span class="badge-warn">97.2%</span></td><td class="num">98.0%</td><td class="num">7.8%</td></tr>
+          <tr><td>HK 아울렛</td><td class="num">3,980K</td><td class="num"><span class="badge-up">105.6%</span></td><td class="num">143.5%</td><td class="num">43.3%</td></tr>
+          <tr><td>HK 온라인</td><td class="num">383K</td><td class="num"><span class="badge-down">69.6%</span></td><td class="num">116.1%</td><td class="num">14.9%</td></tr>
+          <tr><td>마카오 정상</td><td class="num">4,824K</td><td class="num"><span class="badge-warn">95.5%</span></td><td class="num">115.1%</td><td class="num">6.4%</td></tr>
+          <tr><td>마카오 아울렛</td><td class="num">503K</td><td class="num"><span class="badge-down">77.4%</span></td><td class="num">83.4%</td><td class="num">41.8%</td></tr>
         </table>
       </div>
-
-      <div class="section" style="margin-top:6px;">
-        <div class="section-title">📦 아이템별 YoY 추이 비교 (4월 당월)</div>
+      <div class="section">
+        <div class="section-title">부진 / 확인 필요 매장</div>
         <table>
-          <tr><th>아이템</th><th class="num">1~3월 누적YoY</th><th class="num">4월 YoY</th><th class="num">방향</th></tr>
-          <tr><td>26S 당시즌 의류</td><td class="num">126%</td><td class="num">111%</td><td class="num" style="color:#975a16;">↘ 둔화(정상화)</td></tr>
-          <tr><td>과시즌 의류</td><td class="num">109%</td><td class="num">121%</td><td class="num" style="color:#276749;">↑ 가속(할인 강화)</td></tr>
-          <tr><td>모자</td><td class="num">145%</td><td class="num">118%</td><td class="num" style="color:#975a16;">↘ 둔화</td></tr>
-          <tr><td>신발</td><td class="num">99%</td><td class="num">96%</td><td class="num" style="color:#c53030;">↘ 역성장 지속</td></tr>
-          <tr><td>가방</td><td class="num">85%</td><td class="num">68%</td><td class="num" style="color:#c53030;">↘ 역성장 심화</td></tr>
-          <tr><td>기타 ACC</td><td class="num">128%</td><td class="num">78%</td><td class="num" style="color:#c53030;">↘ 역성장 전환</td></tr>
+          <tr><th>매장</th><th class="num">실적</th><th class="num">목표비</th><th class="num">YoY</th><th>확인 포인트</th></tr>
+          <tr><td>Zalora</td><td class="num">41K</td><td class="num"><span class="badge-down">41.5%</span></td><td class="num">50%</td><td>온라인 운영 점검</td></tr>
+          <tr><td>Official MLB</td><td class="num">341K</td><td class="num"><span class="badge-down">75.8%</span></td><td class="num">138%</td><td>목표 미달</td></tr>
+          <tr><td>Senado Outlet</td><td class="num">503K</td><td class="num"><span class="badge-down">77.4%</span></td><td class="num">83%</td><td>7/31 철수 예정</td></tr>
+          <tr><td>Times Square</td><td class="num">546K</td><td class="num"><span class="badge-warn">80.3%</span></td><td class="num">127%</td><td>리뉴얼 회복 점검</td></tr>
+          <tr><td>APM</td><td class="num">1,101K</td><td class="num"><span class="badge-warn">93.3%</span></td><td class="num">95%</td><td>전년 대비 역성장</td></tr>
         </table>
       </div>
     </div>
-
     <div class="right">
       <div class="box box-blue">
-        <div class="box-title blue">📋 카테고리별 핵심 변화 및 운영 전략</div>
+        <div class="box-title blue">채널 및 매장 해석</div>
         <ul>
-          <li><b>가방 (YoY 68%, 1~3월 85%→4월 68% 심화):</b> <b>SKU 축소 및 발주량 감소로 재고 소진에 집중</b>. 재고주수 75.3주 부담 큰 상황에서 신규 입고 억제 전략 진행 중. <b>FW 시즌 전략 변경 가능성</b> — IMC 운영 재검토 필요.</li>
-          <li><b>신발 (YoY 96%, 역성장 지속):</b> 주력 상품 <b>'빅볼청키' 단종 후 '스니커즈'로 전환 중</b>이나 성장세 더딤. <b>'라이너'는 조기 품절 후 5월 리오더 입고</b> — 5월 매출 회복 동력으로 작용 기대.</li>
-          <li><b>온라인 (YoY 221%, 고성장 유지):</b> Official MLB(HE2) 자사몰 314% 견인. 직접이익률 37.2%로 전 채널 최고 수익성.</li>
-          <li><b>홍콩 아울렛 (YoY 115%):</b> 할인율 42.5%(+3.8%p) 상승하며 과시즌 처분 가속. <b>대형 아울렛 신규 매장 계약 추진 중 (Q3-Q4 오픈 예상)</b> — 채널 강화 신호.</li>
-          <li><b>마카오 정상 (YoY 115%):</b> <b>세나도 정상점 3층 일부를 아울렛으로 활용</b>해 로컬 고객 매출 견인 시도 — 관광객 의존도 분산 전략.</li>
-          <li><b>26S 당시즌 의류 (YoY 111%):</b> TS(86.7%), JP(83.4%), MT(70.9%) 시즌 종료 단계 진입. WP(139%), WJ(109%), SK(235%) 봄~초여름 본격 가속.</li>
-          <li><b>과시즌 의류 (YoY 121% 가속):</b> 4월 매출 2,587K — 할인율 47.6%로 적극 처분 모드.</li>
+          <li><b>아울렛이 성장 견인:</b> HK 아울렛 3,980K, YoY 143.5%. 과시즌 처분 채널 역할 강화.</li>
+          <li><b>온라인 목표 미달:</b> HK 온라인 YoY는 116.1%이나 목표비 69.6%. Official MLB와 Zalora 운영 계획 재점검 필요.</li>
+          <li><b>마카오 아울렛 부진:</b> Senado Outlet YoY 83.4%, 목표비 77.4%. 철수 전 재고 소진 계획 집중.</li>
+          <li><b>리뉴얼 영향:</b> Langham, TMT, SenadoSquare 일정과 재오픈 후 회복 속도 주간 모니터링.</li>
+        </ul>
+      </div>
+      <div class="box box-green">
+        <div class="box-title green">상위 매장</div>
+        <ul>
+          <li><b>Venetian:</b> 2,677K, YoY 104%, 목표비 95.6%</li>
+          <li><b>ISQUARE:</b> 1,996K, YoY 125%, 목표비 92.9%</li>
+          <li><b>CITYGATE(O):</b> 1,975K, YoY 134%, 목표비 106.8%</li>
+          <li><b>Mongkok:</b> 1,636K, YoY 546%, 목표비 97.4%</li>
+          <li><b>SenadoSquare:</b> 1,347K, YoY 155%, 목표비 96.2%</li>
         </ul>
       </div>
     </div>
   </div>
 
   <hr class="divider">
-
-  <!-- ===== SECTION 3 ===== -->
-  <div class="page-title" id="sec3">3. 5월 MTD 현황 (기준일 2026.05.12, MLB HKMC)</div>
-
-  <div class="trend-grid" style="grid-template-columns:repeat(5,1fr);">
-    <div class="trend-box">
-      <div class="trend-label">HKMC 5월 MTD 실판매출</div>
-      <div class="trend-value" style="font-size:11px;">9,232K</div>
-      <div class="trend-sub up">YoY 110.0% / 5월 목표 진척 46.3%</div>
-    </div>
-    <div class="trend-box">
-      <div class="trend-label">월말 환산 매출</div>
-      <div class="trend-value" style="font-size:11px;">20,684K</div>
-      <div class="trend-sub up">목표비 103.7% / 월말 YoY 116.6%</div>
-    </div>
-    <div class="trend-box">
-      <div class="trend-label">MTD 할인율</div>
-      <div class="trend-value" style="font-size:11px;">18.2%</div>
-      <div class="trend-sub down">전년비 +0.6%p / 과시즌 처분 영향</div>
-    </div>
-    <div class="trend-box">
-      <div class="trend-label">26S 의류 누적 판매율</div>
-      <div class="trend-value" style="font-size:11px;">39.2%</div>
-      <div class="trend-sub up">YoY +10.8%p / 매출 YoY 140%</div>
-    </div>
-    <div class="trend-box">
-      <div class="trend-label">운영 체크포인트</div>
-      <div class="trend-value" style="font-size:11px;">19개</div>
-      <div class="trend-sub down">NTP1 휴점 지속, 5/31 재오픈 예정</div>
-    </div>
+  <div class="page-title" id="sec3">3. 26SS 판매율 · 과시즌 재고 · ACC 재고주수</div>
+  <div class="trend-grid">
+    <div class="trend-box"><div class="trend-label">26SS 의류 판매율</div><div class="trend-value">42.1%</div><div class="trend-sub up">YoY +11.1%p</div></div>
+    <div class="trend-box"><div class="trend-label">Outer 판매율</div><div class="trend-value">52.3%</div><div class="trend-sub up">WoW +0.2%p</div></div>
+    <div class="trend-box"><div class="trend-label">Inner / Top</div><div class="trend-value">39.2%</div><div class="trend-sub up">WoW +1.1%p</div></div>
+    <div class="trend-box"><div class="trend-label">Bottom</div><div class="trend-value">39.9%</div><div class="trend-sub up">WoW +1.3%p</div></div>
+    <div class="trend-box"><div class="trend-label">과시즌S 재고</div><div class="trend-value">60,874K</div><div class="trend-sub up">YoY -10%</div></div>
   </div>
-
   <div class="container">
     <div class="left">
       <div class="section">
-        <div class="section-title">채널별 5월 MTD 실판매출 및 월말 전망 (HKMC, K HKD)</div>
-        <table>
-          <tr><th>채널</th><th class="num">MTD 매출</th><th class="num">YoY</th><th class="num">월말 전망</th><th class="num">목표비</th></tr>
-          <tr><td>HK 정상</td><td class="num">4,627K</td><td class="num"><span class="badge-down">98.8%</span></td><td class="num">10,366K</td><td class="num">104.5%</td></tr>
-          <tr><td>HK 아울렛</td><td class="num">1,725K</td><td class="num"><span class="badge-up">135.3%</span></td><td class="num">3,865K</td><td class="num">102.5%</td></tr>
-          <tr><td>HK 온라인</td><td class="num">259K</td><td class="num"><span class="badge-up">180.5%</span></td><td class="num">581K</td><td class="num">105.6%</td></tr>
-          <tr><td>마카오 정상</td><td class="num">2,352K</td><td class="num"><span class="badge-up">115.0%</span></td><td class="num">5,269K</td><td class="num">104.3%</td></tr>
-          <tr><td>마카오 아울렛</td><td class="num">269K</td><td class="num"><span class="badge-up">107.9%</span></td><td class="num">603K</td><td class="num"><span class="badge-warn">92.7%</span></td></tr>
-        </table>
-        <div style="font-size:6.5px;color:#718096;margin-top:3px;">※ 기준: 2026.05.01~05.12 MTD, dashboard compact JSON 합계 기준</div>
-      </div>
-
-      <div class="section" style="margin-top:6px;">
-        <div class="section-title">부진 / 확인 필요 매장 (월말 목표비 기준)</div>
-        <table>
-          <tr><th>매장</th><th class="num">MTD 매출</th><th class="num">YoY</th><th class="num">월말 목표비</th><th class="num">확인 포인트</th></tr>
-          <tr><td>Zalora</td><td class="num">26K</td><td class="num"><span class="badge-warn">93.8%</span></td><td class="num"><span class="badge-down">59.3%</span></td><td>무매출일 5일</td></tr>
-          <tr><td>NTP KIDS</td><td class="num">62K</td><td class="num"><span class="badge-up">135.0%</span></td><td class="num"><span class="badge-down">69.7%</span></td><td>목표 대비 저진척</td></tr>
-          <tr><td>Times Square</td><td class="num">248K</td><td class="num"><span class="badge-up">135.8%</span></td><td class="num"><span class="badge-warn">81.6%</span></td><td>리뉴얼 후 회복 확인</td></tr>
-          <tr><td>TMT</td><td class="num">276K</td><td class="num"><span class="badge-up">116.5%</span></td><td class="num"><span class="badge-warn">82.5%</span></td><td>일매출 변동성 점검</td></tr>
-          <tr><td>APM</td><td class="num">460K</td><td class="num"><span class="badge-down">88.2%</span></td><td class="num"><span class="badge-warn">87.3%</span></td><td>전년 대비 역성장</td></tr>
-        </table>
-        <div style="font-size:6.5px;color:#c53030;margin-top:3px;">▲ Zalora, NTP KIDS, APM은 월말 목표비 또는 YoY 기준으로 즉시 원인 확인 필요</div>
-      </div>
-
-      <div class="section" style="margin-top:6px;">
-        <div class="section-title">26S 의류 카테고리 판매율 TOP 및 성장 포인트</div>
+        <div class="section-title">26SS 의류 판매율 TOP 카테고리</div>
         <table>
           <tr><th>카테고리</th><th class="num">누적 매출</th><th class="num">YoY</th><th class="num">판매율</th><th class="num">YoY pp</th></tr>
-          <tr><td>TR</td><td class="num">1,082K</td><td class="num"><span class="badge-up">145%</span></td><td class="num">84.4%</td><td class="num">+29.3p</td></tr>
-          <tr><td>JP</td><td class="num">2,245K</td><td class="num"><span class="badge-up">273%</span></td><td class="num">83.3%</td><td class="num">+39.9p</td></tr>
-          <tr><td>MT</td><td class="num">1,702K</td><td class="num"><span class="badge-up">246%</span></td><td class="num">71.0%</td><td class="num">+21.2p</td></tr>
-          <tr><td>HD</td><td class="num">835K</td><td class="num"><span class="badge-up">235%</span></td><td class="num">67.9%</td><td class="num">+33.8p</td></tr>
-          <tr><td>PT</td><td class="num">915K</td><td class="num"><span class="badge-up">148%</span></td><td class="num">60.5%</td><td class="num">+11.9p</td></tr>
+          <tr><td>TR</td><td class="num">1,082K</td><td class="num">135%</td><td class="num">84.4%</td><td class="num">+27.4p</td></tr>
+          <tr><td>JP</td><td class="num">2,251K</td><td class="num">268%</td><td class="num">83.4%</td><td class="num">+39.4p</td></tr>
+          <tr><td>MT</td><td class="num">1,705K</td><td class="num">247%</td><td class="num">71.0%</td><td class="num">+21.2p</td></tr>
+          <tr><td>HD</td><td class="num">836K</td><td class="num">234%</td><td class="num">68.0%</td><td class="num">+33.7p</td></tr>
+          <tr><td>PT</td><td class="num">944K</td><td class="num">146%</td><td class="num">61.3%</td><td class="num">+11.6p</td></tr>
         </table>
-        <div style="font-size:6.5px;color:#718096;margin-top:3px;">26S 의류 전체 누적 매출 31,477K, 판매율 39.2%, 전년 대비 +10.8%p</div>
       </div>
     </div>
-
     <div class="right">
-      <div class="box box-orange">
-        <div class="box-title orange">5월 MTD 핵심 해석 — 목표는 가능, 정상점 편차는 관리 필요</div>
+      <div class="box box-yellow">
+        <div class="box-title yellow">재고 관리 포인트</div>
         <ul>
-          <li><b>HKMC 월말 환산 20,684K:</b> 5월 목표 19,940K 대비 103.7%로 목표 초과 페이스. 4월 YoY 108% 대비 월말 환산 YoY 116.6%로 회복 신호가 선명함.</li>
-          <li><b>성장 견인 채널:</b> HK 아울렛 YoY 135%, HK 온라인 YoY 181%, 마카오 정상 YoY 115%. 정상 매장 약세를 아울렛·온라인·마카오가 보완하는 구조.</li>
-          <li><b>관리 필요 채널:</b> HK 정상은 MTD YoY 98.8%로 역성장이나 월말 목표비는 104.5%. NTP1 휴점 영향과 일부 핵심점 부진을 분리해서 봐야 함.</li>
-          <li><b>할인율 18.2%:</b> 전년비 +0.6%p로 소폭 상승. 과시즌 처분과 아울렛 성장의 결과라 매출 회복에는 긍정적이나, 6월 이후 수익성 훼손 여부 모니터링 필요.</li>
-          <li><b>26S 의류 판매율 39.2%:</b> 전년 대비 +10.8%p 개선. JP, MT, TR, HD 등 핵심 카테고리 소진 속도가 좋아 당시즌 상품력은 양호.</li>
-        </ul>
-      </div>
-      <div class="box box-blue" style="margin-top:6px;">
-        <div class="box-title blue">문제점 및 개선 필요 액션</div>
-        <ul>
-          <li><b>정상점 성장 둔화:</b> HK 정상 MTD YoY 98.8%로 전체 성장률을 낮추는 구간. NTP1 휴점 영향을 제외한 기존점 회복률을 매장별로 재점검.</li>
-          <li><b>부진 매장 개선:</b> Zalora는 무매출일/프로모션 노출, NTP KIDS는 집객 약화, APM은 전년 대비 역성장 원인을 각각 분리해 대응 필요.</li>
-          <li><b>리뉴얼 매장 모니터링:</b> Times Square는 YoY는 높지만 목표비 81.6% 수준이라 재오픈 효과가 매출로 충분히 연결되는지 주간 확인.</li>
-          <li><b>할인율 관리:</b> 과시즌 처분은 유지하되 정상 채널 할인율 상승이 직접이익률을 훼손하지 않도록 6월부터 채널별 할인 상한 관리 필요.</li>
-          <li><b>상품 운영:</b> 26S 의류는 JP/MT/TR 중심으로 추가 노출을 확대하고, 신발·가방 약세 품목은 입고/프로모션 계획을 별도 점검.</li>
+          <li><b>과시즌S 재고 60,874K:</b> YoY -10%, W22 주간 소진 1,083K로 WoW +6.5% 개선.</li>
+          <li><b>1년차(25S) 25,044K:</b> YoY -30%, 소진 집중 관리.</li>
+          <li><b>2년차(24S) 20,623K:</b> YoY -36%, 체화율 50.8%.</li>
+          <li><b>3년차 이상 15,207K:</b> YoY +257%, 장기재고 집중 정리 필요.</li>
+          <li><b>ACC:</b> Shoes 64.4주, Bag 69.6주, Hat &amp; Cap 58.9주, 기타 ACC 115.0주.</li>
         </ul>
       </div>
     </div>
   </div>
 
   <hr class="divider">
-
-  <!-- ===== SECTION 4 ===== -->
-  <div class="page-title" id="sec4">4. 할인율 · 재고 분석 (4월 당월)</div>
-
+  <div class="page-title" id="sec4">4. 5월 예상 손익 요약 — 실판매출 마감 후 예상 변동비 및 고정비 적용</div>
   <div class="container">
     <div class="left">
-      <div class="box box-yellow">
-        <div class="box-title yellow">⚠️ 할인율 현황 (4월) — 전반적 상승 압력</div>
-        <ul>
-          <li><b>전체 할인율 18.1% (YoY +0.2%p):</b> 전년과 유사 수준 — 가격 정책 안정</li>
-          <li><b>홍콩 정상 7.6% (YoY -2.1%p):</b> 정상채널 할인 관리 양호 유지</li>
-          <li><b>마카오 정상 5.7% (YoY -4.3%p):</b> 가격 관리 큰 폭 개선 지속</li>
-          <li><b>홍콩 아울렛 42.5% (YoY +3.8%p):</b> 과시즌 처분 가속화로 할인율 상승</li>
-          <li><b>마카오 아울렛 43.1% (YoY +5.0%p):</b> 7월말 Senado Outlet 철수 앞두고 재고 소진 강화</li>
-          <li><b>가방 할인율 25.1% (+9.8%p 악화):</b> 고재고(75.3주) 대응 부담 가중</li>
-          <li><b>과시즌 의류 47.4%~49.2%:</b> 재고 소진 위해 적극 운영 — 의도된 가격 정책</li>
-        </ul>
+      <div class="section">
+        <div class="section-title">예상 직접이익 브리지 (K HKD)</div>
+        <table>
+          <tr><th>계정</th><th class="num">전년</th><th class="num">계획</th><th class="num">5월 예상</th><th class="num">계획비</th></tr>
+          <tr><td>실판매출</td><td class="num">17,737</td><td class="num">20,040</td><td class="num">19,334</td><td class="num">96%</td></tr>
+          <tr><td>매출총이익</td><td class="num">10,897</td><td class="num">12,164</td><td class="num">11,719</td><td class="num">96%</td></tr>
+          <tr><td>직접비 합계</td><td class="num">10,955</td><td class="num">11,380</td><td class="num">11,423</td><td class="num">100%</td></tr>
+          <tr style="font-weight:bold;background:#f0fff4;"><td>예상 직접이익</td><td class="num">-59</td><td class="num">784</td><td class="num">296</td><td class="num">38%</td></tr>
+          <tr><td>예상 직접이익률</td><td class="num">-0.3%</td><td class="num">3.9%</td><td class="num">1.5%</td><td class="num">-2.4%p</td></tr>
+        </table>
       </div>
     </div>
     <div class="right">
-      <div class="box box-red">
-        <div class="box-title red">⚠️ 재고 핵심 리스크 (4월말)</div>
+      <div class="box box-orange">
+        <div class="box-title orange">해석 및 범위</div>
         <ul>
-          <li><b>과시즌F 의류 69,921K (YoY 146%):</b> 핵심 리스크 — 1년차(24F) 35,245K + 2년차(23F) 22,692K가 주요 부담</li>
-          <li><b>과시즌S 의류 71,284K (YoY 101%):</b> 1년차(25S) 27,893K + 3년차이상 20,803K(YoY 752%) — 장기재고 급증 우려</li>
-          <li><b>과시즌 합계 141,205K (YoY 119%):</b> 연간 수익성 압박 요인 지속</li>
-          <li><b>가방 재고주수 75.3주:</b> SKU 축소 및 발주량 감소 진행 중 — FW 전략 변경 가능성</li>
-          <li><b>기타 ACC 재고주수 107.1주:</b> 과잉재고 심각 — IMC 스팟 전환 필요</li>
-          <li><b>26S 의류 49,045K (YoY 76%):</b> 전년 대비 감소, 판매율 36.0%로 소화 속도 양호</li>
-          <li><b>전체 기말재고 344,460K (YoY 89%):</b> 총량 감소 기조 유지 중</li>
+          <li><b>실판매출은 마감 실적:</b> 2026.05.31 기준 19,334K 확정.</li>
+          <li><b>손익은 예상치:</b> 예상 변동비 및 고정비를 적용한 직접이익 기준.</li>
+          <li><b>영업비 상세 제외:</b> 세부 영업비와 일회성 경비 내역은 확정 자료 미수령으로 이번 버전에서 제외.</li>
+          <li><b>핵심 과제:</b> 매출 목표 미달폭 관리와 직접이익률 1.5% 개선.</li>
         </ul>
       </div>
     </div>
   </div>
 
   <hr class="divider">
-
-  <!-- ===== SECTION 5 ===== -->
-  <div class="page-title" id="sec5">5. 매장효율성 · 직접이익 분석 (4월 당월) — 포트폴리오 개편 진행 중</div>
-
-  <div class="kpi-grid" style="grid-template-columns: repeat(4,1fr);">
-    <div class="kpi-box">
-      <div class="kpi-label">전체 평당매출 (당월)</div>
-      <div class="kpi-value">835</div>
-      <div class="kpi-change up">HKD/평/일 YoY 115%</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">홍콩 정상 평당매출</div>
-      <div class="kpi-value">758</div>
-      <div class="kpi-change up">HKD/평/일 YoY 122%</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">마카오 정상 평당매출</div>
-      <div class="kpi-value">1,118</div>
-      <div class="kpi-change up">HKD/평/일 YoY 115%</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">운영 매장 (당월)</div>
-      <div class="kpi-value">20개</div>
-      <div class="kpi-change down">홍콩16 / 마카오4</div>
-      <div style="font-size:6px;color:#718096;margin-top:2px;line-height:1.5;">※ 리뉴얼 휴점: NTP1(3/23~5/31)</div>
-    </div>
-  </div>
-
+  <div class="page-title" id="sec5">5. 매장 포트폴리오 개편 일정</div>
   <div class="container">
     <div class="left">
       <div class="box box-blue">
-        <div class="box-title blue">🏗️ 매장 포트폴리오 개편 일정 (2026년)</div>
+        <div class="box-title blue">오픈 · 리뉴얼</div>
         <ul>
-          <li><b>비효율 매장 철수 (확정):</b>
-            <ul style="margin-top:2px;font-size:7px;">
-              <li>Megamall — <b>6월 철수</b></li>
-              <li>YOHO Mall — <b>7월 계약 종료</b></li>
-              <li>NTP3 KIDS — <b>7월 철수</b></li>
-              <li>MC4 Senado Outlet — <b>7월말 철수</b></li>
-            </ul>
-          </li>
-          <li><b>리뉴얼 일정:</b>
-            <ul style="margin-top:2px;font-size:7px;">
-              <li>Times Square — <b>4월 초 완료, 회복세 모니터링 중</b></li>
-              <li>NTP1 — <b>3/23~5/31 리뉴얼, 6월 재오픈</b></li>
-              <li>4월 중 리뉴얼 추진 매장 — <b>5월 재오픈 예정</b></li>
-              <li>올해 총 6개 매장 리뉴얼 추진</li>
-            </ul>
-          </li>
-          <li><b>신규 매장:</b>
-            <ul style="margin-top:2px;font-size:7px;">
-              <li><b>대형 아울렛 신규 매장 계약 추진 (Q3-Q4 오픈 예상)</b></li>
-              <li>아울렛 채널 강화로 과시즌 처분 + 매출 확대</li>
-            </ul>
-          </li>
-          <li><b>마카오 Senado 정상점 운영 변경:</b>
-            <ul style="margin-top:2px;font-size:7px;">
-              <li><b>3층 일부를 아울렛으로 활용</b> — 로컬 고객 매출 견인 시도</li>
-              <li>관광객 의존도 분산 + 과시즌 재고 소진 통합 전략</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="box box-green">
-        <div class="box-title green">🏆 흑자 매장 (4월) — Total 1,096K</div>
-        <ul>
-          <li><span class="store-tag-hk">HK</span> <b>Langham Place 440K:</b> 직접이익률 26.5%, 매출 1,658K (YoY 126%) — 최우수</li>
-          <li><span class="store-tag-hk">HK</span> <b>APM 258K:</b> 직접이익률 24.1%, 매출 1,071K (YoY 120%)</li>
-          <li><span class="store-tag-hk">HK</span> <b>ISQUARE 135K:</b> 매출 1,953K (YoY 135%, 직접이익 -47%) — 매출 급증에도 이익 감소</li>
-          <li><span class="store-tag-hk">HK</span> <b>TMT 137K, Sheung Shui 29K, Citygate 97K</b></li>
-          <li><span class="store-tag-mo">MO</span> <b>Venetian 507K + Senado Square 111K:</b> 마카오 흑자 견인</li>
+          <li><b>NTP1:</b> 6/1 신규 오픈 예정. 오픈 초기 매출 공백 회복 모니터링.</li>
+          <li><b>Langham:</b> 리뉴얼 후 6/13 재오픈 예정(TBC).</li>
+          <li><b>TMT:</b> 5/31 리뉴얼 마감, 7/1 재오픈 예정(TBC).</li>
+          <li><b>SenadoSquare:</b> 6월 휴점 후 7월 재오픈 예정.</li>
+          <li><b>CityWalk(O):</b> 8/1 공사, 9/1 오픈 예정.</li>
+          <li><b>Airside:</b> 9/1 공사, 10/1 오픈 예정.</li>
         </ul>
       </div>
     </div>
     <div class="right">
       <div class="box box-yellow">
-        <div class="box-title yellow">🔥 적자 매장 — 9개 (Total -1,174K)</div>
+        <div class="box-title yellow">철수 · 운영 변경</div>
         <ul>
-          <li><span class="store-tag-hk">HK</span> <b>Mongkok -100K:</b> 매출 1위(1,385K)에도 적자 — 비용 구조 점검</li>
-          <li><span class="store-tag-hk">HK</span> <b>Times Square -203K:</b> 4월초 리뉴얼 완료 — 회복세 모니터링 중</li>
-          <li><span class="store-tag-hk">HK</span> <b>NewTownPlaza KIDS -141K:</b> 매출 176K, 임차·인건비율 110% 초과</li>
-          <li><span class="store-tag-hk">HK</span> <b>NTP1 -152K (리뉴얼 휴점):</b> 5/31 완공 후 6월부터 회복 기대</li>
-          <li><span class="store-tag-hk">HK</span> <b>YOHO Mall -239K:</b> <b>7월 계약 종료 예정</b></li>
-          <li><span class="store-tag-hk">HK</span> <b>NTP3 KIDS:</b> 7월 철수 예정</li>
-          <li><span class="store-tag-hk">HK</span> <b>Megamall:</b> 6월 철수 예정</li>
-          <li><span class="store-tag-hk">HK</span> <b>LCX -86K, Hysan -73K:</b> 매출 성장 중이나 적자 (개선세)</li>
-          <li><span class="store-tag-mo">MO</span> <b>Senado Outlet -129K:</b> <b>7월말 철수 예정</b></li>
-          <li><span class="store-tag-mo">MO</span> <b>Londoner -30K</b></li>
+          <li><b>MegaMall:</b> 7/31 철수 예정.</li>
+          <li><b>NTP KIDS:</b> 7/30 계약 종료 예정.</li>
+          <li><b>Senado Outlet:</b> 7/31 철수 예정.</li>
+          <li><b>YOHO:</b> 10/8 계약 종료 예정.</li>
+          <li><b>인력 TO:</b> 5명 TO는 DISCOVERY 오픈 일정과 연동. HR은 우선 채용하되 당분간 GM이 커버.</li>
         </ul>
       </div>
     </div>
   </div>
 
   <hr class="divider">
-
-  <!-- ===== SECTION 6 ===== -->
-  <div class="page-title" id="sec6">6. 영업비 분석 (4월 당월) — YoY 237% 급증, 적자 확대 핵심 원인</div>
-
-  <div class="container">
-    <div class="left">
-      <div class="box box-red">
-        <div class="box-title red">⚠️ 영업비 급증 리스크 (4월) — Total 2,659K (+1,535K, YoY 237%)</div>
-        <ul>
-          <li><b>HK Office 인건비 1,273K (YoY 208%, +662K):</b>
-            <ul style="margin-top:2px;font-size:7px;">
-              <li>기본급 595K (vs 228K, +261%) — 인원 11명→15명 (MKT+1, MD+1, Ecom+1)</li>
-              <li>연말보너스 51K — 12월 보너스 신규 안분(26년부터)</li>
-              <li><b>인센티브 594K (vs 166K, +357%) — 적자 확대 핵심 원인</b></li>
-              <li>MPF 22K (+120%), 인당 기본급 41.1K (vs 22.4K, +184%)</li>
-              <li>PT 인건비 11K (vs 32K, -65%) — 마케팅 PT 3명→1명 효율화</li>
-            </ul>
-          </li>
-          <li><b>마케팅비/광고비 692K (YoY 455%, +540K):</b> 전년 동월(152K) 대비 대폭 확대</li>
-          <li><b>재고조정 329K (Damage of OSH & Y22-23 Write Off):</b> 일회성 손실 인식</li>
-          <li><b>매출 대비 영업비율 14.1% (전년 6.4%, +7.7%p):</b> 매출 대비 비용 부담 큰 폭 증가</li>
-        </ul>
-      </div>
-      <div class="box box-yellow">
-        <div class="box-title yellow">👥 인력 운영 이슈</div>
-        <ul>
-          <li><b>5명 TO는 DISCOVERY 오픈 일정에 맞춰 순차 검토</b></li>
-          <li><b>HR 공석은 우선 채용 대상이나, 당분간 GM이 직접 커버 예정</b></li>
-          <li>신규 오픈 일정과 HR 충원 시점이 맞물려 운영 부담 관리 필요</li>
-        </ul>
-      </div>
-    </div>
-    <div class="right">
-      <div class="box box-green">
-        <div class="box-title green">✅ 직접비 절감 성과 (4월)</div>
-        <ul>
-          <li><b>직접비율 59.0% (전년 64.4%, -5.4%p):</b> 매출 레버리지 효과 + BASE RENT 절감 효과</li>
-          <li><b>임차료 직접비 -9% (YoY -543K):</b> 임차료율 29.3%(전년 34.7%, -5.4%p) — 협상 효과 지속</li>
-          <li><b>기타 직접비 -4% (YoY -82K):</b> 매장관리비 안정, 광고선전비 -44%</li>
-          <li><b>물류비 직접비 +6% (YoY +65K):</b> 매출 성장 대비 안정적</li>
-          <li><b>누적 직접비율 46.6% (전년 53.0%, -6.4%p):</b> 누적 기준 매출 레버리지 효과 입증</li>
-          <li><b>누적 임차료 24,213K (-1%):</b> 임차료율 23.3%(전년 27.6%, -4.3%p) 큰 폭 개선</li>
-          <li><b>누적 물류비 4,849K (-10%):</b> 물류비율 4.7%(전년 6.0%, -1.3%p) — 직원 내재화 효과</li>
-          <li><b>매출총이익 +1M 증가:</b> 본업 수익성 양호 — 영업비 일회성 비용 제외 시 펀더멘털 견조</li>
-        </ul>
-      </div>
-    </div>
+  <div class="page-title" id="sec6">6. DISCOVERY HKMC 현황 — 5월 실판매출 마감 후 예상 손익</div>
+  <div class="kpi-grid">
+    <div class="kpi-box"><div class="kpi-label">실판매출</div><div class="kpi-value">347K</div><div class="kpi-change down">계획 1,020K</div></div>
+    <div class="kpi-box"><div class="kpi-label">계획비</div><div class="kpi-value">34.1%</div><div class="kpi-change down">매출 미달</div></div>
+    <div class="kpi-box"><div class="kpi-label">예상 직접이익</div><div class="kpi-value" style="color:#c53030;">-452K</div><div class="kpi-change down">계획 -10K</div></div>
+    <div class="kpi-box"><div class="kpi-label">K11 Musea</div><div class="kpi-value">187K</div><div class="kpi-change">오프라인</div></div>
+    <div class="kpi-box"><div class="kpi-label">Official</div><div class="kpi-value">16K</div><div class="kpi-change down">온라인</div></div>
+  </div>
+  <div class="box box-red">
+    <div class="box-title red">DISCOVERY 운영 리스크</div>
+    <ul>
+      <li><b>매출 계획 크게 미달:</b> 실판매출 347K, 계획비 34.1%.</li>
+      <li><b>예상 직접이익 -452K:</b> 계획 -10K 대비 손실 확대.</li>
+      <li><b>신규 오픈 연동:</b> 5명 TO는 DISCOVERY 오픈 일정에 따라 순차 검토.</li>
+      <li><b>FW 성과 검증:</b> 부진 지속 시 운영 전략과 출구 옵션 재검토.</li>
+    </ul>
   </div>
 
   <hr class="divider">
-
-  <!-- ===== SECTION 7 : DISCOVERY ===== -->
-  <div class="page-title" id="sec7">7. DISCOVERY 브랜드 현황 (홍콩, 4월 당월)</div>
-
-  <div class="kpi-grid" style="grid-template-columns:repeat(5,1fr);margin-bottom:6px;">
-    <div class="kpi-box">
-      <div class="kpi-label">실판매출 (4월)</div>
-      <div class="kpi-value" style="font-size:11px;">226K</div>
-      <div class="kpi-change down">매우 저조 (4개월 연속 감소)</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">5월 전망</div>
-      <div class="kpi-value" style="font-size:11px;">600~700K</div>
-      <div class="kpi-change up">개선 추세이나 BEP 크게 미달</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">손익분기점 (월)</div>
-      <div class="kpi-value" style="font-size:11px;">1,500K</div>
-      <div class="kpi-change down">현재 매출의 6~7배 필요</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">누적 매출 (1~4월)</div>
-      <div class="kpi-value" style="font-size:11px;">1,707K</div>
-      <div class="kpi-change down">월별 감소세 지속</div>
-    </div>
-    <div class="kpi-box">
-      <div class="kpi-label">보유 재고 (리테일가)</div>
-      <div class="kpi-value" style="font-size:11px;">~30억원</div>
-      <div class="kpi-change down">악성 재고화 우려</div>
-    </div>
-  </div>
-
+  <div class="page-title" id="sec7">7. 향후 전망 &amp; Action Plan</div>
   <div class="container">
     <div class="left">
-      <div class="box box-red">
-        <div class="box-title red">⚠️ DISCOVERY K11 Musea 현황 및 원인 분석</div>
-        <ul>
-          <li><b>4월 매출 226K — 매우 저조:</b> 1월 694K → 2월 503K → 3월 284K → 4월 226K (4개월 연속 감소, 1월 대비 -67%)</li>
-          <li><b>5월 개선 추세:</b> 월 6~7천만 원(600~700K) 매출 예상되나 BEP(1,500K)에 크게 미달</li>
-          <li><b>매출 저조 복합 원인:</b>
-            <ul style="margin-top:2px;font-size:7px;">
-              <li><b>여름 상품 입고 지연</b> — 시즌 적기 판매 기회 상실</li>
-              <li><b>관광객 매출 감소</b> — K11 Musea 입지 특성상 관광객 비중 높음</li>
-            </ul>
-          </li>
-          <li><b>재고 리테일가 ~30억 원 보유:</b> 매출 부진 지속 시 악성 재고화 우려 — 처분 전략 필요</li>
-        </ul>
-      </div>
-    </div>
-    <div class="right">
       <div class="box box-yellow">
-        <div class="box-title yellow">🎯 DISCOVERY 향후 전략</div>
+        <div class="box-title yellow">6월 우선 과제</div>
         <ul>
-          <li><b>FW 시즌 실적 부진 시 매장 철수 고려:</b> 위약금 감수하고 K11 Musea 철수 옵션 검토 — 결정 시한 26FW 종료 시점</li>
-          <li><b>본사 재고 활용 우선:</b> 별도 신규 발주 최소화로 재고 부담 통제</li>
-          <li><b>26FW 및 27SS 시즌 상품 신규 발주 중단:</b> 추가 재고 유입 차단 — 현 보유 재고 소진 집중</li>
-          <li><b>장기 전략: 로컬 고객 기반 마케팅 수립:</b> 관광객 의존도 탈피 — 홍콩 현지 소비자 타깃 마케팅 전략 개발</li>
-          <li><b>여름 상품 입고 일정 정상화:</b> 시즌별 입고 차질 재발 방지 — 본사 발주/물류 협업 강화</li>
-          <li><b>5월 매출 600~700K 달성 모니터링:</b> 전월 226K 대비 회복세 검증 — 미달 시 즉시 알람</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <hr class="divider">
-
-  <!-- ===== SECTION 8 ===== -->
-  <div class="page-title" id="sec8">8. 향후 전망 & Action Plan</div>
-
-  <div class="container">
-    <div class="left">
-      <div class="box box-green">
-        <div class="box-title green">📈 향후 전망 — 긍정적 흐름</div>
-        <ul>
-          <li><b>매출 연간 목표(114%) 초과 달성 중:</b> 현재 누적 118% — 목표 상회 페이스 유지</li>
-          <li><b>포트폴리오 개편 효과 기대:</b> 올해 6개 매장 리뉴얼 + 비효율 매장 4개 철수(Megamall, YOHO, NTP3 KIDS, Senado Outlet) → 매장당 효율 개선</li>
-          <li><b>대형 아울렛 신규 매장 Q3-Q4 오픈:</b> 매출 동력 추가 확보 + 과시즌 처분 채널 강화</li>
-          <li><b>NTP1 리뉴얼 완공(5/31) 및 4월 리뉴얼 매장 5월 재오픈:</b> 6월부터 매출 회복 가속</li>
-          <li><b>10월 골든위크 회복 기대:</b> 9월 일시 매출 감소 후 회복 전망</li>
-        </ul>
-      </div>
-      <div class="box box-yellow">
-        <div class="box-title yellow">⚠️ 주요 이슈 및 리스크</div>
-        <ul>
-          <li><b>9월 태풍 및 매장 철수로 일시적 매출 감소 예상:</b> 8~9월 보수적 예상치 반영 필요</li>
-          <li><b>인력 TO 운영:</b> 5명 TO는 DISCOVERY 오픈 일정에 따라 검토, HR은 우선 채용하되 당분간 GM 직접 커버</li>
-          <li><b>가방 카테고리 FW 시즌 전략 변경 가능성:</b> SKU 축소·발주 감소 효과 점검 후 결정</li>
-          <li><b>신발 '빅볼청키' 단종 후 '스니커즈' 전환 성장세 더딤:</b> 5월 '라이너' 리오더 입고 효과 검증 필요</li>
-          <li><b>DISCOVERY 재고 30억 원 악성화 우려:</b> FW 부진 시 위약금 감수 철수 옵션 준비</li>
+          <li><b>NTP1 오픈:</b> 6/1 신규 오픈 대비 VMD, 재고 배치, 인력 점검.</li>
+          <li><b>과시즌 소진:</b> 60,874K 재고 중 25S·24S 집중 정리, 주간 소진 모니터링.</li>
+          <li><b>온라인 개선:</b> Official MLB와 Zalora 목표 미달 원인 분석 및 프로모션 보강.</li>
+          <li><b>정상점 회복:</b> HK 정상 채널 YoY 98.0% 개선을 위한 매장별 액션 점검.</li>
+          <li><b>예상 손익 업데이트:</b> 영업비 상세와 일회성 경비 확정 수령 후 손익 재산출.</li>
         </ul>
       </div>
     </div>
     <div class="right">
       <div class="box box-dark">
-        <div style="font-weight:bold;font-size:9px;margin-bottom:4px;">📌 2026년 핵심 KPI 현황 (MLB HKMC, 1~4월 누적)</div>
+        <div style="margin-bottom:4px;font-size:9px;font-weight:bold;">2026년 5월 핵심 KPI 현황</div>
         <table style="color:white;">
-          <tr>
-            <th style="background:rgba(255,255,255,0.1);color:white;border-color:rgba(255,255,255,0.2);">지표</th>
-            <th style="background:rgba(255,255,255,0.1);color:white;border-color:rgba(255,255,255,0.2);" class="num">1~4월 실적</th>
-            <th style="background:rgba(255,255,255,0.1);color:white;border-color:rgba(255,255,255,0.2);" class="num">연간 목표</th>
-            <th style="background:rgba(255,255,255,0.1);color:white;border-color:rgba(255,255,255,0.2);" class="num">상태</th>
-          </tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">실판매출 YoY</td><td style="border-color:rgba(255,255,255,0.1);" class="num">118%</td><td style="border-color:rgba(255,255,255,0.1);" class="num">114%↑</td><td style="border-color:rgba(255,255,255,0.1);" class="num">✅ 초과</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">영업이익률(누적)</td><td style="border-color:rgba(255,255,255,0.1);" class="num">7.9%</td><td style="border-color:rgba(255,255,255,0.1);" class="num">15%↑</td><td style="border-color:rgba(255,255,255,0.1);" class="num">🔴</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">영업이익 YoY(누적)</td><td style="border-color:rgba(255,255,255,0.1);" class="num">+6.6M</td><td style="border-color:rgba(255,255,255,0.1);" class="num">증가</td><td style="border-color:rgba(255,255,255,0.1);" class="num">✅</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">직접이익률(누적)</td><td style="border-color:rgba(255,255,255,0.1);" class="num">14.7%</td><td style="border-color:rgba(255,255,255,0.1);" class="num">22%↑</td><td style="border-color:rgba(255,255,255,0.1);" class="num">⚠️</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">할인율(누적)</td><td style="border-color:rgba(255,255,255,0.1);" class="num">18.4%</td><td style="border-color:rgba(255,255,255,0.1);" class="num">17% 이하</td><td style="border-color:rgba(255,255,255,0.1);" class="num">⚠️</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">5월 MTD YoY</td><td style="border-color:rgba(255,255,255,0.1);" class="num">110%(동일122%)</td><td style="border-color:rgba(255,255,255,0.1);" class="num">115%↑</td><td style="border-color:rgba(255,255,255,0.1);" class="num">⚠️</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">과시즌 재고 YoY</td><td style="border-color:rgba(255,255,255,0.1);" class="num">119%</td><td style="border-color:rgba(255,255,255,0.1);" class="num">80% 이하</td><td style="border-color:rgba(255,255,255,0.1);" class="num">🔴</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">DX 4월 매출</td><td style="border-color:rgba(255,255,255,0.1);" class="num">226K (BEP 미달)</td><td style="border-color:rgba(255,255,255,0.1);" class="num">1,500K BEP</td><td style="border-color:rgba(255,255,255,0.1);" class="num">🔴</td></tr>
-          <tr><td style="border-color:rgba(255,255,255,0.1);">인력 TO 운영</td><td style="border-color:rgba(255,255,255,0.1);" class="num">오픈 일정 연동</td><td style="border-color:rgba(255,255,255,0.1);" class="num">HR 우선</td><td style="border-color:rgba(255,255,255,0.1);" class="num">⚠️</td></tr>
+          <tr><th style="color:white;background:rgba(255,255,255,.1);">지표</th><th class="num" style="color:white;background:rgba(255,255,255,.1);">5월</th><th class="num" style="color:white;background:rgba(255,255,255,.1);">기준</th><th class="num" style="color:white;background:rgba(255,255,255,.1);">상태</th></tr>
+          <tr><td>실판매출</td><td class="num">19,334K</td><td class="num">19,940K</td><td class="num">주의</td></tr>
+          <tr><td>실판매출 YoY</td><td class="num">109%</td><td class="num">성장</td><td class="num">양호</td></tr>
+          <tr><td>예상 직접이익</td><td class="num">296K</td><td class="num">784K</td><td class="num">주의</td></tr>
+          <tr><td>예상 직접이익률</td><td class="num">1.5%</td><td class="num">3.9%</td><td class="num">주의</td></tr>
+          <tr><td>26SS 의류 판매율</td><td class="num">42.1%</td><td class="num">YoY +11.1p</td><td class="num">양호</td></tr>
+          <tr><td>과시즌S 재고</td><td class="num">60,874K</td><td class="num">YoY -10%</td><td class="num">관리</td></tr>
+          <tr><td>DX HKMC 매출</td><td class="num">347K</td><td class="num">1,020K</td><td class="num">위험</td></tr>
         </table>
-      </div>
-      <div class="box box-blue" style="margin-top:6px;">
-        <div class="box-title blue">🎯 핵심 Action Plan</div>
-        <ul>
-          <li><b>매장 포트폴리오 개편 일정 차질 없이 실행:</b> Megamall(6월), YOHO/NTP3 KIDS/Senado Outlet(7월) 철수 일정 점검</li>
-          <li><b>인력 TO 운영:</b> 5명 TO는 DISCOVERY 오픈 일정과 연동해 진행 — HR 공석은 우선 채용하되 당분간 GM이 커버</li>
-          <li><b>대형 아울렛 신규 매장 계약 마무리:</b> Q3-Q4 오픈 일정 확정 — 매출 동력 확보</li>
-          <li><b>가방·신발 카테고리 전략 점검:</b> FW 시즌 진입 전 SKU 정리 및 상품 라인업 확정</li>
-          <li><b>DISCOVERY FW 성과 검증 후 출구 전략 결정:</b> 26FW 종료 시점 의사결정</li>
-        </ul>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    F&F HKMC · MLB·DISCOVERY Brand Monthly Report · 2026년 04월 · Confidential · 단위: K HKD · 분석기준: 2026년 4월 vs 2025년 4월 (YoY) · 5월 MTD 기준일: 2026.05.12
+    F&amp;F HKMC · MLB Brand Monthly Report · 2026년 05월 · Confidential · 단위: K HKD · 실판매출 마감 기준일: 2026.05.31 · 손익: 예상 변동비 및 고정비 적용
   </div>
-
 </div>
 </body>
 </html>
