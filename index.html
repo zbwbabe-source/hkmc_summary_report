@@ -38,6 +38,13 @@
     .badge-up { color: #276749; background: #c6f6d5; }
     .badge-down { color: #c53030; background: #fed7d7; }
     .badge-warn { color: #975a16; background: #fefcbf; }
+    .signal { display: inline-block; width: 7px; height: 7px; border-radius: 50%; vertical-align: middle; }
+    .signal-up { background: #38a169; }
+    .signal-warn { background: #ecc94b; }
+    .signal-down { background: #e53e3e; }
+    .signal-new { background: #a0aec0; }
+    .subtotal td { background: #f0f4f8; font-weight: bold; }
+    .detail-note { margin-top: 4px; color: #718096; font-size: 6.5px; }
     .kpi-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 4px; margin-bottom: 8px; }
     .kpi-box, .trend-box { padding: 5px 4px; border: 1px solid #e2e8f0; border-radius: 4px; background: #f7fafc; text-align: center; }
     .kpi-label, .trend-label { margin-bottom: 1px; color: #718096; font-size: 6.5px; }
@@ -240,6 +247,36 @@
     </div>
   </div>
 
+  <div class="section" style="margin-top:10px;">
+    <div class="section-title">전체 HK 매장별 MTD · YTD 실판매출 (K HKD)</div>
+    <table>
+      <tr><th>채널</th><th>매장</th><th class="num">신호등</th><th class="num">5월 MTD</th><th class="num">YTD 누적</th><th class="num">목표비</th><th class="num">MTD YoY</th><th class="num">YTD YoY</th></tr>
+      <tr><td>리테일</td><td>Mongkok</td><td class="num"><span class="signal signal-up"></span></td><td class="num">1,636K</td><td class="num">9,501K</td><td class="num">97.4%</td><td class="num"><span class="badge-up">546%</span></td><td class="num">129%</td></tr>
+      <tr><td>리테일</td><td>TimesSquare</td><td class="num"><span class="signal signal-up"></span></td><td class="num">546K</td><td class="num">2,613K</td><td class="num">80.3%</td><td class="num"><span class="badge-up">127%</span></td><td class="num">110%</td></tr>
+      <tr><td>리테일</td><td>LCX</td><td class="num"><span class="signal signal-up"></span></td><td class="num">887K</td><td class="num">4,985K</td><td class="num">104.3%</td><td class="num"><span class="badge-up">122%</span></td><td class="num">121%</td></tr>
+      <tr><td>리테일</td><td>SheungShui</td><td class="num"><span class="signal signal-up"></span></td><td class="num">600K</td><td class="num">3,370K</td><td class="num">101.8%</td><td class="num"><span class="badge-up">121%</span></td><td class="num">108%</td></tr>
+      <tr><td>리테일</td><td>ISQUARE</td><td class="num"><span class="signal signal-up"></span></td><td class="num">1,996K</td><td class="num">12,236K</td><td class="num">92.9%</td><td class="num"><span class="badge-up">125%</span></td><td class="num">137%</td></tr>
+      <tr><td>리테일</td><td>APM</td><td class="num"><span class="signal signal-down"></span></td><td class="num">1,101K</td><td class="num">6,330K</td><td class="num">93.3%</td><td class="num"><span class="badge-down">95%</span></td><td class="num">109%</td></tr>
+      <tr><td>리테일</td><td>NTP1 <span class="badge-warn">신규 오픈</span></td><td class="num"><span class="signal signal-new"></span></td><td class="num">147K</td><td class="num">4,934K</td><td class="num">-</td><td class="num">신규</td><td class="num">79%</td></tr>
+      <tr><td>리테일</td><td>HysanPlace</td><td class="num"><span class="signal signal-up"></span></td><td class="num">636K</td><td class="num">3,262K</td><td class="num">90.9%</td><td class="num"><span class="badge-up">135%</span></td><td class="num">133%</td></tr>
+      <tr><td>리테일</td><td>TMT</td><td class="num"><span class="signal signal-up"></span></td><td class="num">642K</td><td class="num">4,410K</td><td class="num">85.6%</td><td class="num"><span class="badge-up">121%</span></td><td class="num">132%</td></tr>
+      <tr><td>리테일</td><td>Langham</td><td class="num"><span class="signal signal-down"></span></td><td class="num">689K</td><td class="num">8,719K</td><td class="num">125.3%</td><td class="num"><span class="badge-down">38%</span></td><td class="num">105%</td></tr>
+      <tr><td>리테일</td><td>NTP KIDS</td><td class="num"><span class="signal signal-up"></span></td><td class="num">164K</td><td class="num">1,096K</td><td class="num">81.9%</td><td class="num"><span class="badge-up">175%</span></td><td class="num">160%</td></tr>
+      <tr><td>리테일</td><td>YOHO</td><td class="num"><span class="signal signal-up"></span></td><td class="num">600K</td><td class="num">3,287K</td><td class="num">101.6%</td><td class="num"><span class="badge-up">127%</span></td><td class="num">120%</td></tr>
+      <tr class="subtotal"><td colspan="3">리테일 소계</td><td class="num">9,644K</td><td class="num">64,743K</td><td class="num">97.2%</td><td class="num">98.0%</td><td class="num">116.7%</td></tr>
+      <tr><td>온라인</td><td>Zalora</td><td class="num"><span class="signal signal-down"></span></td><td class="num">41K</td><td class="num">498K</td><td class="num">41.5%</td><td class="num"><span class="badge-down">50%</span></td><td class="num">79%</td></tr>
+      <tr><td>온라인</td><td>Official MLB</td><td class="num"><span class="signal signal-up"></span></td><td class="num">341K</td><td class="num">3,461K</td><td class="num">75.8%</td><td class="num"><span class="badge-up">138%</span></td><td class="num">374%</td></tr>
+      <tr class="subtotal"><td colspan="3">온라인 소계</td><td class="num">383K</td><td class="num">3,959K</td><td class="num">69.6%</td><td class="num">116.1%</td><td class="num">254.8%</td></tr>
+      <tr><td>아울렛</td><td>CITYGATE(O)</td><td class="num"><span class="signal signal-up"></span></td><td class="num">1,975K</td><td class="num">10,547K</td><td class="num">106.8%</td><td class="num"><span class="badge-up">134%</span></td><td class="num">129%</td></tr>
+      <tr><td>아울렛</td><td>MegaMall</td><td class="num"><span class="signal signal-up"></span></td><td class="num">500K</td><td class="num">2,349K</td><td class="num">119.1%</td><td class="num"><span class="badge-up">167%</span></td><td class="num">107%</td></tr>
+      <tr><td>아울렛</td><td>YuenLong(O)</td><td class="num"><span class="signal signal-up"></span></td><td class="num">586K</td><td class="num">3,332K</td><td class="num">101.1%</td><td class="num"><span class="badge-up">164%</span></td><td class="num">133%</td></tr>
+      <tr><td>아울렛</td><td>MOKO(O)</td><td class="num"><span class="signal signal-up"></span></td><td class="num">919K</td><td class="num">5,480K</td><td class="num">99.8%</td><td class="num"><span class="badge-up">144%</span></td><td class="num">136%</td></tr>
+      <tr class="subtotal"><td colspan="3">아울렛 소계</td><td class="num">3,980K</td><td class="num">21,707K</td><td class="num">105.6%</td><td class="num">143.5%</td><td class="num">128.6%</td></tr>
+      <tr class="subtotal"><td colspan="3">HK 활성 매장 합계</td><td class="num">14,007K</td><td class="num">90,409K</td><td class="num">98.4%</td><td class="num">114.1%</td><td class="num">122.3%</td></tr>
+    </table>
+    <div class="detail-note">활성 18개 매장 기준 · 비활성 매장 제외 · NTP1은 2026.05.30 신규 오픈 반영 · 신호등: MTD YoY 100% 이상 녹색, 95~99% 노란색, 95% 미만 빨간색, 신규점 회색.</div>
+  </div>
+
   <hr class="divider">
   <div class="page-title" id="sec3">3. 26SS 판매율 · 과시즌 재고 · ACC 재고주수</div>
   <div class="trend-grid">
@@ -325,7 +362,7 @@
       <div class="box box-blue">
         <div class="box-title blue">오픈 · 리뉴얼</div>
         <ul>
-          <li><b>NTP1:</b> 6/1 신규 오픈 예정. 오픈 초기 매출 공백 회복 모니터링.</li>
+          <li><b>NTP1:</b> 5/30 신규 오픈. 오픈 초기 매출과 기존점 회복 효과 모니터링.</li>
           <li><b>Langham:</b> 리뉴얼 후 6/13 재오픈 예정(TBC).</li>
           <li><b>TMT:</b> 5/31 리뉴얼 마감, 7/1 재오픈 예정(TBC).</li>
           <li><b>SenadoSquare:</b> 6월 휴점 후 7월 재오픈 예정.</li>
@@ -374,7 +411,7 @@
       <div class="box box-yellow">
         <div class="box-title yellow">6월 우선 과제</div>
         <ul>
-          <li><b>NTP1 오픈:</b> 6/1 신규 오픈 대비 VMD, 재고 배치, 인력 점검.</li>
+          <li><b>NTP1 오픈:</b> 5/30 신규 오픈 후 VMD, 재고 배치, 초기 매출 점검.</li>
           <li><b>과시즌 소진:</b> 60,874K 재고 중 25S·24S 집중 정리, 주간 소진 모니터링.</li>
           <li><b>온라인 개선:</b> Official MLB와 Zalora 목표 미달 원인 분석 및 프로모션 보강.</li>
           <li><b>정상점 회복:</b> HK 정상 채널 YoY 98.0% 개선을 위한 매장별 액션 점검.</li>
